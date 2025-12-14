@@ -1,0 +1,261 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, Arial, sans-serif;
+  background: #f4f6fb;
+  color: #1f2937;
+}
+
+/* ---------- COMMON ---------- */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 14px;
+}
+
+button.primary {
+  background: #2563eb;
+  color: white;
+}
+
+button.secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+button.danger {
+  background: #dc2626;
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* ---------- AUTH PAGES ---------- */
+/* .center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 360px;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #2563eb;
+  font-size: 14px;
+  text-align: center;
+} */
+
+
+/* ---------- AUTH ---------- */
+
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.auth-card {
+  width: 380px;
+  padding: 32px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow:
+    0 2px 8px rgba(0,0,0,0.05),
+    0 20px 40px rgba(0,0,0,0.08);
+}
+
+.auth-logo {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.auth-subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.auth-card input {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+}
+
+.auth-card input:focus {
+  border-color: #1d9bf0;
+}
+
+.auth-primary {
+  margin-top: 10px;
+  background: #1d9bf0;
+  color: white;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 999px;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.auth-footer a {
+  color: #1d9bf0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ---------- DASHBOARD ---------- */
+.container {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top h2 {
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* ---------- FORM CARD ---------- */
+.form-card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.form-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.form-card form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.form-card textarea {
+  grid-column: span 2;
+}
+
+.form-card button {
+  width: fit-content;
+}
+
+/* ---------- TASK LIST ---------- */
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.task {
+  background: white;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.task h4 {
+  margin: 0;
+}
+
+.task small {
+  color: #6b7280;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* ---------- PAGINATION ---------- */
+.pagination {
+  margin: 24px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ---------- ERROR ---------- */
+.error {
+  color: #dc2626;
+  font-size: 14px;
+}
