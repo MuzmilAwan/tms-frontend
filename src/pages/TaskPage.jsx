@@ -77,7 +77,7 @@ export default function TaskPage() {
     return (
         <div className="container">
             <header className="top">
-                <h2>Tasks</h2>
+                <h1>Tasks Management Dashboard</h1>
                 <div>
                     <button className="secondary" onClick={logout}>Logout</button>
                 </div>
